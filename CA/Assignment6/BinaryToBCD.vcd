@@ -1,0 +1,82 @@
+$date
+	Wed Jun  3 13:02:23 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_binary_to_bcd $end
+$var wire 4 ! tens [3:0] $end
+$var wire 4 " ones [3:0] $end
+$var wire 4 # huns [3:0] $end
+$var reg 8 $ bin [7:0] $end
+$scope module uut $end
+$var wire 8 % bin [7:0] $end
+$var reg 4 & huns [3:0] $end
+$var reg 4 ' ones [3:0] $end
+$var reg 4 ( tens [3:0] $end
+$var integer 32 ) value [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b101010 )
+b100 (
+b10 '
+b0 &
+b101010 %
+b101010 $
+b0 #
+b10 "
+b100 !
+$end
+#10
+b1 #
+b1 &
+b0 !
+b0 (
+b101 "
+b101 '
+b1101001 )
+b1101001 $
+b1101001 %
+#20
+b0 #
+b0 &
+b100 !
+b100 (
+b11 "
+b11 '
+b101011 )
+b101011 $
+b101011 %
+#30
+b10 "
+b10 '
+b101010 )
+b101010 $
+b101010 %
+#40
+b0 !
+b0 (
+b10 )
+b10 $
+b10 %
+#50
+b10 !
+b10 (
+b100 "
+b100 '
+b11000 )
+b11000 $
+b11000 %
+#60
+b1000 !
+b1000 (
+b1010100 )
+b1010100 $
+b1010100 %
+#70

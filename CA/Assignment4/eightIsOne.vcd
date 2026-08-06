@@ -1,0 +1,107 @@
+$date
+	Wed May 20 14:48:25 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module eightSoneTest $end
+$var wire 1 ! y $end
+$var reg 8 " i [7:0] $end
+$var reg 3 # s [2:0] $end
+$scope module uut $end
+$var wire 8 $ i [7:0] $end
+$var wire 3 % s [2:0] $end
+$var wire 1 & y1 $end
+$var wire 1 ' y0 $end
+$var wire 1 ! y $end
+$scope module m1 $end
+$var wire 4 ( i [3:0] $end
+$var wire 2 ) s [1:0] $end
+$var wire 1 ' y $end
+$upscope $end
+$scope module m2 $end
+$var wire 4 * i [3:0] $end
+$var wire 2 + s [1:0] $end
+$var wire 1 & y $end
+$upscope $end
+$scope module m3 $end
+$var wire 1 ' i0 $end
+$var wire 1 & i1 $end
+$var wire 1 , s $end
+$var wire 1 ! y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0,
+b0 +
+b1010 *
+b0 )
+b1011 (
+1'
+0&
+b0 %
+b10101011 $
+b0 #
+b10101011 "
+1!
+$end
+#10
+1&
+b1 )
+b1 +
+b1 #
+b1 %
+#20
+0!
+0'
+0&
+b10 )
+b10 +
+b10 #
+b10 %
+#30
+1!
+1'
+1&
+b11 )
+b11 +
+b11 #
+b11 %
+#40
+0!
+0&
+b0 )
+b0 +
+1,
+b100 #
+b100 %
+#50
+1!
+1&
+b1 )
+b1 +
+b101 #
+b101 %
+#60
+0!
+0'
+0&
+b10 )
+b10 +
+b110 #
+b110 %
+#70
+1!
+1'
+1&
+b11 )
+b11 +
+b111 #
+b111 %
+#80

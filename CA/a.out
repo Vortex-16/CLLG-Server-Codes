@@ -1,0 +1,57 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib64/ivl/system.vpi";
+:vpi_module "/usr/lib64/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib64/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib64/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib64/ivl/va_math.vpi";
+S_0x561b1b7b6440 .scope module, "testbench" "testbench" 2 1;
+ .timescale 0 0;
+v0x561b1b7c6560_0 .var "a", 3 0;
+v0x561b1b7c6620_0 .var "en", 0 0;
+v0x561b1b7c66f0_0 .net "y", 3 0, L_0x561b1b7c67f0;  1 drivers
+S_0x561b1b7b65d0 .scope module, "uut" "tsbuffer" 2 5, 3 1 0, S_0x561b1b7b6440;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "en";
+    .port_info 1 /INPUT 4 "a";
+    .port_info 2 /OUTPUT 4 "y";
+o0x7fdbbc552018 .functor BUFZ 4, C4<zzzz>; HiZ drive
+; Elide local net with no drivers, v0x561b1b77e720_0 name=_ivl_0
+v0x561b1b7c6280_0 .net "a", 3 0, v0x561b1b7c6560_0;  1 drivers
+v0x561b1b7c6360_0 .net "en", 0 0, v0x561b1b7c6620_0;  1 drivers
+v0x561b1b7c6400_0 .net "y", 3 0, L_0x561b1b7c67f0;  alias, 1 drivers
+L_0x561b1b7c67f0 .functor MUXZ 4, o0x7fdbbc552018, v0x561b1b7c6560_0, v0x561b1b7c6620_0, C4<>;
+    .scope S_0x561b1b7b6440;
+T_0 ;
+    %vpi_call 2 7 "$dumpfile", "dump.vcd" {0 0 0};
+    %vpi_call 2 8 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x561b1b7b6440 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x561b1b7c6620_0, 0, 1;
+    %pushi/vec4 0, 0, 4;
+    %store/vec4 v0x561b1b7c6560_0, 0, 4;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x561b1b7c6620_0, 0, 1;
+    %pushi/vec4 0, 0, 4;
+    %store/vec4 v0x561b1b7c6560_0, 0, 4;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x561b1b7c6620_0, 0, 1;
+    %pushi/vec4 15, 0, 4;
+    %store/vec4 v0x561b1b7c6560_0, 0, 4;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x561b1b7c6620_0, 0, 1;
+    %pushi/vec4 15, 0, 4;
+    %store/vec4 v0x561b1b7c6560_0, 0, 4;
+    %delay 10, 0;
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "testbenchts4.v";
+    "designtb4.v";

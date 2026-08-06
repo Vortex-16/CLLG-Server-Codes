@@ -1,0 +1,17 @@
+module inCTest();
+	reg [3:0]a;
+	wire [3:0]y;
+	inC uut(.a(a),.y(y));
+	integer i;
+	initial begin
+		$dumpfile("test.vcd");
+		$dumpvars;
+		a=4'b0000; #10;
+		a=4'b0001; #10;
+		a=4'b0010; #10;
+		a=4'b1000; #10;
+		a=4'b1010; #10;
+		a=4'b1011; #10;
+	end
+endmodule
+172.16.1.50

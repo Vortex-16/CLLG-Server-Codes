@@ -2,8 +2,9 @@
 
 printf 'Enter a string: '
 read str
-
+str=${str,,}
 rev=""
+
 for (( i = 0; i < ${#str}; i++)) ; do
 	rev="${str:i:1}$rev"
 done

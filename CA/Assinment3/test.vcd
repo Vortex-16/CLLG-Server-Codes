@@ -1,0 +1,44 @@
+$date
+	Wed Jun  3 15:40:43 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module inCTest $end
+$var wire 4 ! y [3:0] $end
+$var reg 4 " a [3:0] $end
+$scope module uut $end
+$var wire 4 # a [3:0] $end
+$var wire 4 $ y [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10 $
+b1 #
+b1 "
+b10 !
+$end
+#10
+b11 !
+b11 $
+b10 "
+b10 #
+#20
+b100 "
+b100 #
+#30
+b111 !
+b111 $
+b1000 "
+b1000 #
+#40
+b1110 !
+b1110 $
+b1111 "
+b1111 #
+#50

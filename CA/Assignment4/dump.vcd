@@ -1,0 +1,61 @@
+$date
+	Wed May 20 15:33:28 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module threeEtoEightDTest $end
+$var wire 8 ! y [7:0] $end
+$var reg 3 " a [2:0] $end
+$scope module uut $end
+$var wire 3 # a [2:0] $end
+$var wire 8 $ y [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 $
+b0 #
+b0 "
+b1 !
+$end
+#10
+b10 !
+b10 $
+b1 "
+b1 #
+#20
+b100 !
+b100 $
+b10 "
+b10 #
+#30
+b1000 !
+b1000 $
+b11 "
+b11 #
+#40
+b10000 !
+b10000 $
+b100 "
+b100 #
+#50
+b100000 !
+b100000 $
+b101 "
+b101 #
+#60
+b1000000 !
+b1000000 $
+b110 "
+b110 #
+#70
+b10000000 !
+b10000000 $
+b111 "
+b111 #
+#80

@@ -9,7 +9,7 @@ for (( i = 0; i < ${#str}; i++)) ; do
 done
 
 if [ $str == $rev ]; then
-	echo "Palindrome"
+	echo "Actully It's A Palindrome: Good Input"
 else
-	echo "Not palindrome"
+	echo "Whenever You Enter Invalid Input It Will be Not palindrome"
 fi

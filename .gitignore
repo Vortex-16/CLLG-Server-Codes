@@ -1,3 +1,18 @@
-.vcd
+# Waveform and simulation artifacts
 *.vcd
+
+# Build outputs
+*.out
+
+# Editor/temp files
+*.swp
+*.swo
+
+# Local shell profile files (do not commit)
+.bash
+.bash_profile
+.bashrc
+.profile
+
+# Legacy typo path kept for compatibility
 CA/Assinment3/2sComplemenet.vcd

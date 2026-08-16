@@ -1,0 +1,11 @@
+f=open("Python/File/FileSystem/demofile.txt","r")
+print(f.read())
+f.seek(0)
+print(f.readline())
+print(f.readline())
+f.seek(0)
+print(f.read(5))
+f.seek(0)
+for line in f:
+    print(line)
+f.close()

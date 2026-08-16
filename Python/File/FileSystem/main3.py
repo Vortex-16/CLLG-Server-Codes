@@ -1,0 +1,5 @@
+f=open("Python/File/FileSystem/demofile.txt","w")
+f.write("Now the file has more content!")
+f.close()
+f=open("Python/File/FileSystem/demofile.txt","r")
+print(f.read())

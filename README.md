@@ -65,10 +65,12 @@ It is designed to be useful for:
 
 | Subject | Highlights |
 | --- | --- |
+| `C/` | Basics of programming in C |
 | `CA/` | Computer Architecture + Verilog designs and testbenches |
-| `DAA/` | Algorithm design topics like sorting, searching, greedy, backtracking |
-| `DS/` | Core Data Structures implementations in C |
-| `JAVA/` | Java fundamentals and class assignments |
+| `DS/` | Data Structure concepts and implementations |
+| `DAA/` | Design and Analysis of Algorithms (sorting, searching, greedy, backtracking) |
+| `JAVA/` | Java OOPs fundamentals and class assignments |
+| `Python/` | Learning GUI concepts and other Python practice programs |
 | `OS/` | Operating Systems exercises and shell-related work |
 | `SoftLocker/` | Supporting project resources/tools |
 
@@ -78,10 +80,12 @@ It is designed to be useful for:
 
 ```text
 CLLG-Server-Codes/
+├── C/
 ├── CA/
-├── DAA/
 ├── DS/
+├── DAA/
 ├── JAVA/
+├── Python/
 ├── OS/
 └── SoftLocker/
 ```

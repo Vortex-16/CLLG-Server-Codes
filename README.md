@@ -17,6 +17,7 @@
 ## 📚 Table of Contents
 
 - [About the Repository](#-about-the-repository)
+- [Author & Academic Context](#-author--academic-context)
 - [Who Is This For?](#-who-is-this-for)
 - [What You Will Find](#-what-you-will-find)
 - [Folder Structure](#-folder-structure)
@@ -30,11 +31,23 @@
 
 This repository is a curated collection of practical college-level Computer Science work, including lab programs, assignment solutions, and subject-wise problem solving.
 
+All major codes and practical implementations in this repository were written by **Vortex** as part of academic coursework and hands-on lab practice.
+
 It is designed to be useful for:
 - students preparing for labs and viva
 - freshers revising core CS concepts
 - employees brushing up on fundamentals
 - teams looking for quick academic reference examples
+
+---
+
+## 🏫 Author & Academic Context
+
+- 👨‍💻 Author: **Vortex**
+- 🏛️ Institution: **St. Thomas' College of Engineering and Technology**
+- 🧠 Department: **Computer Science and Engineering (CSE)**
+- 🎓 University: **MAKAUT**
+- 🧪 Nature of work: **Course and practical/lab-based programs**
 
 ---
 

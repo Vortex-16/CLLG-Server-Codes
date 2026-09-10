@@ -1,5 +1,3 @@
-
-
 #!/bin/bash
 
 while true
@@ -119,7 +117,7 @@ do
 	    ;;
 	15)
        	    echo
-	    echo "Pls Wait! For This Section"
+	    grep -n "container" teachers
 	    ;;
 	16)
 	    echo

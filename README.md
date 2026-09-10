@@ -72,7 +72,7 @@ It is designed to be useful for:
 | `JAVA/` | Java OOPs fundamentals and class assignments |
 | `Python/` | Learning GUI concepts and other Python practice programs |
 | `OS/` | Operating Systems exercises and shell-related work |
-| `SoftLocker/` | Supporting project resources/tools |
+| `SoftLocker/` | Supporting Server To be Locked Appart From College Public Lock  |
 
 ---
 

@@ -3,74 +3,84 @@
 echo "Enter file name:"
 read file
 
-echo
-echo "1. Display whole file"
-echo "2. Display student by Roll Number"
-echo "3. Delete student by Roll Number"
-echo "4. Add a new student"
-echo "5. Update student by Roll Number"
-echo
+while true
+do
+    echo "1. Display whole file"
+    echo "2. Display student by Roll Number"
+    echo "3. Delete student by Roll Number"
+    echo "4. Add a new student"
+    echo "5. Update student by Roll Number"
+    echo "6. Exit"
 
-echo "Enter your choice:"
-read ch
+    echo "Enter your choice:"
+    read ch
 
-case $ch in
+    case $ch in
 
-1)
-    cat $file
-    ;;
+    1)
+        echo "Student Records:"
+        cat $file
+        ;;
 
-2)
-    echo "Enter Roll Number:"
-    read roll
+    2)
+        echo "Enter Roll Number:"
+        read roll
 
-    grep "^$roll " $file
-    ;;
+        grep "^$roll " $file
+        ;;
 
-3)
-    echo "Enter Roll Number to delete:"
-    read roll
+    3)
+        echo "Enter Roll Number to delete:"
+        read roll
 
-    sed -i "/^$roll /d" $file
+        sed -i "/^$roll /d" $file
 
-    echo "Student deleted."
-    ;;
+        echo "Student deleted."
+        ;;
 
-4)
-    echo "Enter Roll Number:"
-    read roll
+    4)
+        echo "Enter Roll Number:"
+        read roll
 
-    echo "Enter Name:"
-    read name
+        echo "Enter Name:"
+        read name
 
-    echo "Enter City:"
-    read city
+        echo "Enter City:"
+        read city
 
-    echo "$roll $name $city" >> $file
-    sort -n -o $file $file
+        echo "$roll $name $city" >> $file
 
-    echo "Student added."
-    ;;
+        sort -n -o $file $file
 
-5)
-    echo "Enter Roll Number to update:"
-    read roll
+        echo "Student added."
+        ;;
 
-    echo "Enter New Name:"
-    read name
+    5)
+        echo "Enter Roll Number to update:"
+        read roll
 
-    echo "Enter New City:"
-    read city
+        echo "Enter New Name:"
+        read name
 
-    sed -i "s/^$roll .*/$roll $name $city/" $file
+        echo "Enter New City:"
+        read city
 
-    sort -n -o $file $file
+        sed -i "s/^$roll .*/$roll $name $city/" $file
 
-    echo "Student updated."
-    ;;
+        sort -n -o $file $file
 
-*)
-    echo "Invalid choice."
-    ;;
+        echo "Student updated."
+        ;;
 
-esac
+    6)
+        echo "Exiting program..."
+        exit
+        ;;
+
+    *)
+        echo "Invalid choice. Please enter 1-6."
+        ;;
+
+    esac
+
+done

@@ -17,12 +17,10 @@ read ch
 case $ch in
 
 1)
-    # Display whole file
     cat $file
     ;;
 
 2)
-    # Display student using Roll Number
     echo "Enter Roll Number:"
     read roll
 
@@ -30,7 +28,6 @@ case $ch in
     ;;
 
 3)
-    # Delete student using Roll Number
     echo "Enter Roll Number to delete:"
     read roll
 
@@ -40,7 +37,6 @@ case $ch in
     ;;
 
 4)
-    # Add a new student
     echo "Enter Roll Number:"
     read roll
 
@@ -51,15 +47,12 @@ case $ch in
     read city
 
     echo "$roll $name $city" >> $file
-
-    # Sort file according to Roll Number
     sort -n -o $file $file
 
     echo "Student added."
     ;;
 
 5)
-    # Update student using Roll Number
     echo "Enter Roll Number to update:"
     read roll
 
@@ -71,7 +64,6 @@ case $ch in
 
     sed -i "s/^$roll .*/$roll $name $city/" $file
 
-    # Sort file again
     sort -n -o $file $file
 
     echo "Student updated."

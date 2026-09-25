@@ -13,7 +13,6 @@ class Defender extends Car
 }
 public class QOne{
 	public static void main(String args[]){
-	
         Defender d = new Defender();
         d.start();
     }

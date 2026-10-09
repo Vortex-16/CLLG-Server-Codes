@@ -16,7 +16,7 @@ class Child implements Father, Mother {
     }
 }
 
-public class qtwo {
+public class Qtwo {
     public static void main(String[] args) {
         Child c = new Child();
         c.fatherMethod();

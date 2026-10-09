@@ -16,7 +16,7 @@ class C extends A, B {
     }
 }
 
-public class qthree {
+public class Qthree {
     public static void main(String[] args) {
         C c = new C();
         c.showA();

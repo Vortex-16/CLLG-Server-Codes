@@ -1,12 +1,12 @@
 import pack1.A;
-import pack2.X;
+import pack2.Y;
 
 public class Main {
     public static void main(String[] args) {
         A a = new A();
-        X x = new X();
+        Y y = new Y();
 
         a.display();
-        x.display();
+        y.display();
     }
 }

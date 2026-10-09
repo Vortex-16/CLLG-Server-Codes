@@ -3,6 +3,7 @@
 
 # Build outputs
 *.out
+*.class 
 
 # Editor/temp files
 *.swp
